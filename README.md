@@ -15,7 +15,7 @@ that is, the term forward rate is the integral average of the instantaneous forw
 
 Given term forward rates with adjacent underlying term intervals, we want a function f such that it is piecewise quadratic, continuous, and relation (1) is respected.  If we restrict ourselves to these conditions only, we obtain a family of arbitrage-free curves parametrized by the values of f at boundary points (start and end points of the term intervals). The forward curves associated are automatically smooth.
 
-Consequently, in order to obtain a unique function f, there is a need to impose meaningful conditions on the values of f at boundary points. This is done such that the locality property of the curve (when shocking an input instrument, the shock spreads to the neighbors only, not to the whole curve) is guaranteed. The constructed curve can be used to value derivatives, like callable exotics (see https://finpricing.com/lib/EqCallable.html).
+Consequently, in order to obtain a unique function f, there is a need to impose meaningful conditions on the values of f at boundary points. This is done such that the locality property of the curve (when shocking an input instrument, the shock spreads to the neighbors only, not to the whole curve) is guaranteed. The constructed curve can be used to value derivatives.
 
 Assume we are given three ordered dates  , and corresponding term forward rates  and  . By no-arbitrage condition, we automatically have 
 
@@ -38,4 +38,7 @@ In conclusion, using (2) to (5), we can restate the main condition as follows:
 
 If   is much smaller than  , when we shock   the value of   is not going to jump too sharply as the weight of   is small. Condition (5’) is the one adopted in the new methodology. In the current methodology the weights are reversed, which induces a higher sensitivity of   with respect to   (assuming   is much smaller than  ).
 
+Reference:
+
+https://finpricing.com/aboutus.html
 
